@@ -1,0 +1,41 @@
+<!-- <div class="container">
+  <div *ngFor="let survey of surveys">
+    <button [routerLink]="['survey',survey.id]">{{survey.name}} </button>
+  </div>
+</div> -->
+<!-- <router-outlet></router-outlet> -->
+
+<!-- <div class="wrapper">
+<div class="sidebar">
+  <h2 class="sidebar-text">Surveys </h2>
+  <div class="surveySidebar" *ngFor="let survey of surveys">  
+    <button [routerLink]="['survey',survey.id]">{{survey.name}} </button>
+  </div>
+</div>
+  <div class="main-content">
+    <div class="info">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div> -->
+
+
+<div class="wrapper">
+  <div class="sidebar">
+    <h2 class="sidebar-text">Surveys </h2>
+    <div class="surveySidebar" *ngFor="let survey of surveys; index as i">  
+      <button (click)="setActiveClass(i)" [class.active]="i == selectedindex" [routerLink]="['survey',survey.id]">{{survey.name}} </button>
+    </div>
+  </div>
+    <div class="main-content">
+      <div class="wrapper">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+  
+
+
+   
+
+

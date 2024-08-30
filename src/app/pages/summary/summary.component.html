@@ -1,0 +1,11 @@
+<div class="summary">
+  <h1 id="surveyName" class="header">{{ selectedSurveyName }} Summary</h1>
+  @for(data of dataProvider; track $index){
+  <div class="mainContainer">
+    <h3 id="resultQue" class="infoContent">{{ data.que }}</h3>
+    <div class="infoValue">
+      <h5 id="resultAns">{{ data.ans }}</h5>
+    </div>
+  </div>
+  }
+</div>

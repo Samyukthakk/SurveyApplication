@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  //has no boxsiz noon
+//   box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  display: flex;
+}
+
+app-root {
+  display: flex;
+  flex: 1;
+}
+
+body {
+  display: flex;
+  flex: 1;
+  //bg commented in browser noon
+  background-color: #f3f5f9;
+}

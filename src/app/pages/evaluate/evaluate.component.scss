@@ -1,0 +1,79 @@
+:host {
+  display: flex;
+  flex: 1;
+}
+
+.parent {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.parent .container {
+  width: 500px;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.parent .container .actionBtn {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 1px solid lightgrey;
+}
+
+.parent .container .actionBtn button {
+  display: flex;
+  align-items: center;
+  padding: 7px 15px;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  //
+}
+.parent .container .actionBtn button:hover {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: #4b4276;
+  color: #fff;
+  outline: none;
+}
+
+.parent .container .surveyevaluate {
+  padding: 15px 20px;
+  .surveyevaluateques {
+    margin: 5px 0;
+    font-size: 30px;
+  }
+}
+
+.choiceOption {
+  display: flex;
+}
+
+.choiceOption button {
+  margin-top: 20px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  padding: 4px 15px;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  background: aliceblue;
+}
+
+.choiceOption button:hover {
+  cursor: pointer;
+  color: #a547c8;
+  background: #e7c4f3;
+  border-color: #4b4276;
+}
+
+.btn:active {
+  background-color: aqua;
+}

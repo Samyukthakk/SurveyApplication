@@ -1,0 +1,16 @@
+<div id="parent" class="parent">
+    <div id="container" class="container">
+        <div class="actionBtn">
+            <button (click)="onReset()">Reset</button>
+            <button (click)="showSummary()">Show Summary</button>
+        </div>
+        <div class="surveyevaluate">
+            <h1 id="question" class="surveyevaluateques">{{evaluate?.value}}</h1>
+            <div id="choiceContainer" class="choiceOption">
+                <div *ngFor="let choice of choices;index as i">
+                    <button id="choice_{{i}}" class="btn" [ngClass]="choiceSelected == choice.id ? 'active' : ''" (click)="onChoose(choice.id)">{{choice.value}}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
